@@ -2,12 +2,13 @@ package jp.techacademy.shoya.oota.javalog;
 import android.util.Log;
 public class Human extends Animal implements Thinkable {
 
-    String hobby="プログラミング";
+    private String hobby;
 
     //コンストラクタ
-    Human(String name,int age){
+    Human(String name,int age,String hobby){
         this.name=name;
         this.age=age;
+        this.hobby=hobby;
     }
 
     @Override
@@ -17,7 +18,7 @@ public class Human extends Animal implements Thinkable {
 
     @Override
     public void think(){
-        Log.d("javatest","私は"+hobby+"について考える。");
+        Log.d("javatest","私は"+this.hobby+"について考える。");
     }
 
 }
