@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        Human human=new Human("田中",20); //名前を田中、年齢を20でHumanのインスタンスを作る
+        Human human=new Human("田中",20,"プログラミング"); //名前を田中、年齢を20でHumanのインスタンスを作る
 
         human.say();
 
